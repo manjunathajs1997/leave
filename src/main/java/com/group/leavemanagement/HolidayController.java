@@ -65,6 +65,7 @@ public class HolidayController {
             updatedHoliday.setDate(holiday.getDate());
             updatedHoliday.setDescription(holiday.getDescription());
             updatedHoliday.setRegion(holiday.getRegion());
+            updatedHoliday.setCountry(holiday.getCountry());
             return ResponseEntity.ok().body(holidayRepository.save(updatedHoliday));
         }
 
